@@ -1,0 +1,9 @@
+To run this code
+
+install ruby 1.8.7 using rvm (see cromulent testing blog for instructions)
+
+gem install bundler
+
+bundle install
+
+cucumber
