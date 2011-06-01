@@ -6,8 +6,8 @@ When /^I search google for "([^\"]*)"$/ do |search_query|
 end
 
 Then /^the google results page title should include "([^\"]*)"$/ do | expected_title |
-  #in a 'real project' I would make the assert using rspec
   within ('head title') do
+    #in a 'real project' I would make the assert using rspec
     raise "title did not contain #{expected_title}" unless page.has_content? expected_title
   end
 end
